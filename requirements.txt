@@ -1,0 +1,8 @@
+anthropic
+chromadb
+langchain
+langchain-anthropic
+langchain-community
+pymupdf
+streamlit
+python-dotenv
