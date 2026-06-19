@@ -3,6 +3,7 @@ chromadb
 langchain
 langchain-anthropic
 langchain-community
+langchain-text-splitters
 pymupdf
 streamlit
 python-dotenv
