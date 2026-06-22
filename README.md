@@ -96,7 +96,9 @@ pip install -r requirements.txt
 ```
 
 4. Create a `.env` file in the project root:
+    ```bash
     ANTHROPIC_API_KEY=your_api_key_here
+    ```
 
 5. Add your PDF documents to the `data/` directory, then run ingestion:
 ```bash
