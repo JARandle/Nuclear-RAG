@@ -1,5 +1,6 @@
 import streamlit as st
 from src.chain import ask
+import json
 import os
 
 st.set_page_config(
@@ -28,6 +29,28 @@ with st.sidebar:
     else:
         st.warning("No documents found in data folder.")
 
+    st.divider()
+    st.subheader("Eval Scores")
+
+    eval_path = "tests/eval_results.json"
+    if os.path.exists(eval_path):
+        with open(eval_path) as f:
+            eval_data = json.load(f)
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric(
+                label="Faithfulness",
+                value=f"{eval_data['avg_faithfulness']:.0%}"
+            )
+        with col2:
+            st.metric(
+                label="Relevancy",
+                value=f"{eval_data['avg_relevancy']:.0%}"
+            )
+        st.caption(f"Based on {eval_data['num_questions']} test questions")
+    else:
+        st.caption("No eval results found. Run tests/eval.py to generate.")
     st.divider()
 
     n_results = st.slider(

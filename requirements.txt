@@ -7,4 +7,3 @@ langchain-text-splitters
 pymupdf
 streamlit
 python-dotenv
-datasets
