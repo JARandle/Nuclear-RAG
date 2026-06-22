@@ -1,0 +1,182 @@
+{
+  "avg_faithfulness": 0.95,
+  "avg_relevancy": 0.9,
+  "num_questions": 5,
+  "individual_results": [
+    {
+      "question": "What are the in-place leak testing acceptance criteria for HEPA filter systems?",
+      "ground_truth": "Combined penetration and leakage must be less than 0.05% of the challenge aerosol at system-rated flow plus or minus 10%, warranting 99% removal efficiency for particulates.",
+      "answer": "## In-Place Leak Testing Acceptance Criteria for HEPA Filter Systems\n\n### Acceptance Criteria\n\nBased on the provided documentation, the acceptance criterion for in-place leak testing of HEPA filter systems is:\n\n> A **combined penetration and leakage (or bypass) of less than 0.05 percent** of the challenge aerosol at a **system-rated flow \u00b110 percent**, which is required to warrant a **99-percent removal efficiency for particulates**.\n\n[Source 3, Page 12]\n\n---\n\n### Required Testing Frequencies / Trigger Events\n\nIn-place leak tests must be performed:\n\n1. **Consistent with frequency intervals** shown in Section 5.7 and Appendix III to **ASME N511-2007**\n2. **After each partial or complete replacement** of a HEPA filter bank\n3. **Following detection of water or other material** penetration or intrusion into any portion of the system that may adversely affect filter functionality\n4. **Following painting, fire, or chemical release** in any ventilation zone communicating with the system\n\n[Source 2, Page 12] [Source 4, Page 15]\n\n---\n\n### Corrective Actions for Failed Tests\n\nIf a HEPA filter section **fails to satisfy leak test criteria**, the following applies:\n\n- The section must be **examined to determine the location and cause** of leaks\n- Minor adjustments (e.g., **alignment of filter cases, tightening of hold-down fasteners**) may be made\n- **Defective, damaged, or torn filter media must NOT be repaired by patching and caulking** \u2014 filters must be **replaced**\n\n[Source 3, Page 12]\n\n---\n\n### Challenge Aerosol\n\nThe standard challenge aerosol used is **polydisperse droplets of dioctyl phthalate (DOP)**, also known as di-2-ethylhexyl-phthalate. Alternative challenge agents may be used provided they meet specifications in **ASME AG-1-2009**.\n\n[Source 5, Page 16]",
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "faithfulness_reason": "Every claim in the answer is directly supported by the retrieved context, including the 0.05% acceptance criterion, the \u00b110% flow rate, the 99% removal efficiency requirement, testing trigger events, corrective actions, and challenge aerosol specifications.",
+        "relevancy_reason": "The answer directly and completely addresses the core question about acceptance criteria (0.05% penetration and leakage at system-rated flow \u00b110%) while also providing valuable supplementary information about testing conditions and corrective actions.",
+        "faithfulness_normalized": 1.0,
+        "relevancy_normalized": 1.0
+      },
+      "sources": [
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 4
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 12
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 12
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 15
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "question": "What challenge aerosol is used for HEPA filter penetration testing?",
+      "ground_truth": "Dioctyl phthalate (DOP) or 4 centistoke polyalpha olefin (PAO) are used as challenge aerosols for HEPA filter penetration testing.",
+      "answer": "## Challenge Aerosol for HEPA Filter Penetration Testing\n\nBased on the provided regulatory documents, the following challenge aerosols are specified:\n\n### Standard/Primary Challenge Aerosol\nThe standard challenge aerosol used in **in-place leak testing** of HEPA filters is:\n- **Polydisperse droplets of dioctyl phthalate (DOP)**, also known as **di-2-ethylhexyl-phthalate** [Source 1, Page 16]\n\n### Alternative/Acceptable Challenge Aerosols\n- **4-centistoke poly-alpha olefin (PAO)** is cited as an acceptable alternative for penetration testing [Source 4, Page 9]\n- Additional alternative challenge agents may also be used for in-place leak testing, provided they meet two specific criteria:\n  1. The aerosol must have the **approximate light-scattering droplet size** specified in Article TA-VI-3000 of ASME AG-1-2009 with addenda\n  2. The aerosol must meet the **characteristics described in Appendix TA-C-1200** to ASME AG-1-2009 with addenda [Source 1, Page 16]\n\n### Applicable Standards\nHEPA filter penetration testing using these aerosols should be performed in accordance with **Section TA of ASME AG-1b-2009** [Source 4, Page 9].",
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "faithfulness_reason": "Every claim in the answer is directly supported by the retrieved context, including the primary aerosol (DOP/di-2-ethylhexyl-phthalate from Page 16), the alternative (4-centistoke PAO from Page 9), the ASME AG-1-2009 criteria, and the applicable testing standard.",
+        "relevancy_reason": "The answer directly and completely addresses the question by identifying both the standard challenge aerosol (DOP) and acceptable alternative (PAO) used for HEPA filter penetration testing, along with relevant regulatory context.",
+        "faithfulness_normalized": 1.0,
+        "relevancy_normalized": 1.0
+      },
+      "sources": [
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 16
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 12
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 15
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 9
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "question": "What is the maximum flow rate for a single HEPA filtration unit?",
+      "ground_truth": "A single filtration unit is limited to 850 cubic meters per minute or 30,000 CFM to ensure reliable in-place testing.",
+      "answer": "## Maximum Flow Rate for a Single HEPA Filtration Unit\n\nThe maximum volumetric airflow rate for a single HEPA filtration unit is **30,000 cubic feet per minute (approximately 850 cubic meters per minute)**.\n\nThis limit is cited in two regulatory sources:\n\n- **[Source 1, Page 8]** states: *\"The volumetric airflow rate of a single filtration unit should be limited to 850 cubic meters (30,000 cubic feet) per minute unless reliable in-place testing can be assured.\"*\n\n- **[Source 2, Page 9]** similarly states: *\"The volumetric airflow rate of each cleanup unit should be limited to approximately 30,000 cubic feet per minute in accordance with the recommendations of DOE-HDBK 1169-2003, 'Nuclear Air Cleaning Handbook,' paragraph 4.4.11, 'Size of Banks.'\"*\n\n### If Higher Flow Capacity is Required:\nBoth sources consistently recommend the use of **multiple parallel units** rather than exceeding this threshold:\n\n- RG 1.140 Rev. 3 recommends considering *\"a system design with multiple, parallel units\"* **[Source 1, Page 8]**\n- RG 1.52 Rev. 4 specifies that *\"multiple units should be used\"* if total system airflow exceeds this rate **[Source 2, Page 9]**",
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "faithfulness_reason": "Every claim in the answer is directly supported by the retrieved context, including the flow rate limits, the regulatory sources cited, and the recommendation for multiple parallel units.",
+        "relevancy_reason": "The answer directly and completely addresses the question about maximum flow rate for a single HEPA filtration unit, providing both the cubic meters and CFM values along with relevant context about what to do if higher capacity is needed.",
+        "faithfulness_normalized": 1.0,
+        "relevancy_normalized": 1.0
+      },
+      "sources": [
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 8
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 9
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 4
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 12
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "question": "Under what conditions must in-place leak testing be performed?",
+      "ground_truth": "In-place leak testing must be performed at frequency intervals per ASME N511, after partial or complete filter bank replacement, following water intrusion, and following painting, fire, or chemical release in any communicating ventilation zone.",
+      "answer": "## Conditions Requiring In-Place Leak Testing of Adsorbers\n\nBased on the provided document excerpts, in-place leak testing must be performed under the following conditions:\n\n### Per NRC Regulatory Guide 1.52 Rev. 4:\n[Source 2, Page 16] Testing is required:\n1. Following events that **may have an adverse effect on the functional capability of the adsorber**\n2. Following **painting, fire, or chemical release** in any ventilation zone communicating with the system that may have an adverse effect on the functional capability of the system\n\n### Per NRC Regulatory Guide 1.140 Rev. 3:\n[Source 3, Page 12] Testing is required:\n1. Following detection of, or evidence of, **penetration or intrusion of water or other material** into any portion of a normal atmosphere cleanup system that may have an adverse effect on the functional capability of the adsorbers\n2. Following **painting, fire, or chemical release** in any ventilation zone communicating with the system\n3. Following any event affecting **any adsorber in an adsorber section**\n\n### Acceptance Criteria\nIn all cases, the leak test must confirm a **combined penetration and leakage (bypass) of 0.05 percent or less** of the challenge gas at rated flow **\u00b110 percent** [Source 2, Page 16; Source 3, Page 12].\n\n---\n> **Note:** The provided excerpts appear to contain only partial lists of triggering conditions. A complete answer would require reviewing additional pages of these regulatory guides.",
+      "scores": {
+        "faithfulness": 4,
+        "relevancy": 3,
+        "faithfulness_reason": "Nearly all claims are directly supported by the retrieved context, including the water intrusion condition, painting/fire/chemical release condition, and acceptance criteria, though the answer's organization slightly extrapolates by attributing conditions to specific regulatory guides without full certainty from the excerpts.",
+        "relevancy_reason": "The answer partially addresses the question by identifying several triggering conditions from the context, but misses the key condition from the ground truth about frequency intervals per ASME N511 and partial or complete filter bank replacement, and the system itself acknowledges the excerpts are incomplete.",
+        "faithfulness_normalized": 0.75,
+        "relevancy_normalized": 0.5
+      },
+      "sources": [
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 16
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 16
+        },
+        {
+          "source": "NRC Regulatory Guid 1.140 Rev. 3.pdf",
+          "page": 12
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 16
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "question": "What quality assurance standard applies to ESF atmosphere cleanup systems?",
+      "ground_truth": "All testing and documentation must comply with a quality assurance program consistent with 10 CFR Part 50 Appendix B.",
+      "answer": "## Quality Assurance Requirements for ESF Atmosphere Cleanup Systems\n\nBased on the provided document excerpts, the applicable quality assurance standard for ESF atmosphere cleanup systems is **Appendix B to 10 CFR Part 50**, titled *\"Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants.\"*\n\nSpecifically, the document states:\n\n> *\"The pertinent quality assurance requirements of Appendix B, 'Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants,' to 10 CFR Part 50 apply to **all activities affecting the safety-related functions of all components** of the ESF atmosphere cleanup system.\"*\n\n[Source 1, Page 10]\n\n### Key Points:\n- The QA requirements apply **broadly** \u2014 covering **all activities** that affect safety-related functions\n- The scope encompasses **all components** of the ESF atmosphere cleanup system\n- This QA requirement is applied in conjunction with design and testing standards such as **ASME AG-1-2009** and **ASME N509-2002** [Source 3, Page 8]\n\nIt is worth noting that the provided excerpts do not elaborate further on the specific programmatic elements of the Appendix B QA criteria as they relate to ESF systems. For a complete understanding of all applicable QA requirements, review of the full regulatory guide and 10 CFR Part 50, Appendix B would be warranted.",
+      "scores": {
+        "faithfulness": 5,
+        "relevancy": 5,
+        "faithfulness_reason": "Every claim in the answer is directly supported by the retrieved context, including the direct quote about Appendix B applying to all activities affecting safety-related functions of all components, and the mention of ASME AG-1-2009 and ASME N509-2002 as supplementary standards.",
+        "relevancy_reason": "The answer directly and completely addresses the question by identifying the applicable QA standard (10 CFR Part 50 Appendix B), explaining its scope, and providing the exact regulatory language from the context.",
+        "faithfulness_normalized": 1.0,
+        "relevancy_normalized": 1.0
+      },
+      "sources": [
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 10
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 5
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 8
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 1
+        },
+        {
+          "source": "NRC Regulatory Guide 1.52 Rev. 4.pdf",
+          "page": 5
+        }
+      ]
+    }
+  ]
+}
